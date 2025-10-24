@@ -1,21 +1,10 @@
-import { useState } from "react";
 import "./App.css";
-import MyButton from "./components/MyButton";
+import AppCount from "./components/AppCount";
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  const handleCount = () => {
-    setCount(count + 1);
-  };
-
+export default function App() {
   return (
-    <div>
-      <h3>Hello from react !!</h3>
-      <MyButton count={count} onCount={handleCount} />
-      <MyButton count={count} onCount={handleCount} />
-    </div>
+    <>
+      <AppCount />
+    </>
   );
 }
-
-export default App;
